@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/log-in.css">
+  
+</head>
+<body>
+    <section>
+        <div class="form">
+            <div class="value">
+
+                <form action="../HTML/Home.html">
+                    <h2>Login</h2>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="username">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me <a href="#">Forget Password</a></label>
+                       
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">Don't have an account <a href="#">Register</a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function auth(){
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if(username === "alurha@gmail.com" && password === "12345"){
+                window.location.href = "Home.html";
+                alert("Login Succesful")
+                return false; // Prevent form submission
+            } else {
+                alert("Invalid credentials");
+                return false; // Prevent form submission
+            }
+        }
+    </script> 
+</body>
+</html>

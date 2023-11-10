@@ -1,0 +1,12 @@
+body{
+    background-image: linear-gradient(to right,#BFBDC1, #6D6975);
+    height: auto;
+    width: auto;
+}
+.map{
+    display: cover;
+    position: absolute;
+    float: center;
+    padding-top: 5.5%;
+    padding-left: 25%;
+}

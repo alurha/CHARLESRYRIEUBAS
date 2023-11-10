@@ -1,0 +1,145 @@
+.first-div{
+    background-image: linear-gradient(to right,#FCFB62, #91F9E5);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ .main-header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: lightgreen;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   z-index: 50;
+ }
+ 
+ .nav a{
+   position: relative;
+   font-size: 18px;
+   color: black;
+   font-weight: 500;
+   text-decoration: none;
+   margin-left: 40px;
+   float: left;
+ }
+ .nav a::before{
+   content:'';
+   position: absolute;
+   top: 100%;
+   left: 0px;
+   width: 0px;
+   height: 2px;
+   background: gray;
+   transition: .4s;
+   
+ }
+ .nav a:hover::before{
+   width: 100%;
+   
+ }
+ .logo{
+  
+   background-size: 0px;
+   mix-blend-mode: multiply;
+   padding-left:10px;
+ }
+ .container h3{
+    padding-top: 50px;
+    padding-bottom: 0px;
+   text-align: center;
+   font-size: 40px;
+   font-weight: bolder;
+   color: brown;
+ }
+ .container h3 span{
+font-weight: 50;
+color: black;
+ }
+ .horizontal{
+    width:60%;
+    height: 4px;
+    background-color: darkgreen;
+    margin-top: 5.3%;
+    margin-bottom: 90px;
+    margin-left: 300px;
+    position: absolute;
+    top: 7.9%;
+    mix-blend-mode:multiply;
+    
+  }
+  html.body{
+    padding: 10px;
+  }
+ 
+  img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .grid-wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+  }
+  .grid-wrapper .wide {
+    grid-column: span 2;
+  }
+  .grid-wrapper .tall{
+    grid-row: span 2;
+  }
+  .grid-wrapper .big{
+      grid-column: span 2;
+      grid-row: span 2;
+  }
+
+.video-text h1{
+  font-size: 40px;
+  font-weight: bolder;
+  color:darkmagenta;
+  text-align: center;
+  padding: 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .video-text h1 span{
+    font-size: 40px;
+    color:black;
+  }
+  .horizontal-2{
+    width:60%;
+    height: 4px;
+    background-color: darkgoldenrod;
+    margin-top: 1070px;
+    margin-bottom: 90px;
+    margin-left: 300px;
+    position: absolute;
+    top: 6.2%;
+    mix-blend-mode:multiply;
+  }
+  .second-div{
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+  }
+html{
+  font-size: 62.5%;
+}
